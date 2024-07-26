@@ -9,8 +9,18 @@ The stock selection is based on weight, as we go for the safest stocks to invest
 
 ![NVDA STOCK GROWTH](https://github.com/ChrisAntococt471/NVDA-Stock-Forecast/blob/main/NVDA%20ANNUAL%20GROWTH.png)
 
-We used Prophet, Linear Regression, Random Forest Regressor, XGBoost Regressor, and ARIMA models to predict future NVDA stock price.
+We used Prophet, Linear Regression, Random Forest Regressor, XGBoost Regressor, and ARIMA models to predict future NVDA stock prices.
 
-In the end, we decided that ARIMA model is the best fit for prediciting NVDA price
+In the end, we decided that the ARIMA model is the best fit for the prediciting NVDA price.
 
-![ARIMA](https://github.com/ChrisAntococt471/NVDA-Stock-Forecast/blob/main/STOCKS%20GAIN%20COMPARISON.png)
+![ARIMA](https://github.com/ChrisAntococt471/NVDA-Stock-Forecast/blob/main/ARIMA.png)
+
+![ARIMA](https://github.com/ChrisAntococt471/NVDA-Stock-Forecast/blob/main/Model%20Comparison.png)
+
+Sudden dramatic increase of the NVDA price mostly failed to be anticipated properly by most of the models, especially since the train data only cover up until 2023-10-25, and the dramatic rise of the price still happened after that. So far, only ARIMA, combined with rolling forecast technique can give a better forecast value.
+
+With the data trend like this, some new ideas for the treatment would be:
+
+1. Only using the data from 2023 onwards, since data from previous date looks irrelevant
+2. Wait for more data to generate
+3. Add new variables for regression predictor (examples like lags, moving average, and others)
