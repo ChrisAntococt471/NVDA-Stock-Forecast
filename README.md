@@ -9,3 +9,8 @@ The stock selection is based on weight, as we go for the safest stocks to invest
 
 ![NVDA STOCK GROWTH](https://github.com/ChrisAntococt471/NVDA-Stock-Forecast/blob/main/NVDA%20ANNUAL%20GROWTH.png)
 
+We used Prophet, Linear Regression, Random Forest Regressor, XGBoost Regressor, and ARIMA models to predict future NVDA stock price.
+
+In the end, we decided that ARIMA model is the best fit for prediciting NVDA price
+
+![ARIMA](https://github.com/ChrisAntococt471/NVDA-Stock-Forecast/blob/main/STOCKS%20GAIN%20COMPARISON.png)
